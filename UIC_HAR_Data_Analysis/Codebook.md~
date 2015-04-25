@@ -4,7 +4,7 @@
 -----------------------------------------------------------------------------
 Libraries
 -----------------------------------------------------------------------------
-   Required
+Requird
 	plyr 
 	dplyr
 	reshape2
@@ -108,4 +108,3 @@ Column names of mean_and_std_of_comb_data (cols)
 	TimeBodyAccMagMean   
 	TimeBodyAccMagStd     
 	TimeGravityAccMagMean
------------------------------------------------------------------------------
