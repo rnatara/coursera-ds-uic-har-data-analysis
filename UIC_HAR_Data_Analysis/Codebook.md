@@ -1,5 +1,6 @@
 # UIC HAR Data Analysis Codebook
 # nram, Apr 25, 2015
+# Pl see RAW Version for readability
 
 -----------------------------------------------------------------------------
 Libraries

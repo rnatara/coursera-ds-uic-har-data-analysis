@@ -1,5 +1,6 @@
 # README for UIC HAR Data Analysis script
 # nram, Apr 24, 2015
+# Pl view the Raw version for readability
 
 The script run_analysis.R does the following 
 #----------------------------------------------------------------------------
