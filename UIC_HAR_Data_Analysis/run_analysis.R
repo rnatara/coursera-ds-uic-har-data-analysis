@@ -25,18 +25,18 @@ if(!file.exists("UCI_HAR_Dataset/features.txt")){cat ("\nNo Samsung data found i
 
 # read meta data
 cat ("\nReading meta info:\n")
-features <- read.table("I:/Coursera/Data/UCI_HAR_Dataset/features.txt",header=F)
-activity_labels <- read.table("I:/Coursera/Data/UCI_HAR_Dataset/activity_labels.txt",header=F)
+features <- read.table("./UCI_HAR_Dataset/features.txt",header=F)
+activity_labels <- read.table("./UCI_HAR_Dataset/activity_labels.txt",header=F)
 # read data sets
 cat ("\nReading test dataset\n")
-x_test<-read.table("I:/Coursera/Data/UCI_HAR_Dataset/test/X_test.txt", header=F)
-y_test<-read.table("I:/Coursera/Data/UCI_HAR_Dataset/test/y_test.txt", header=F)
-subject_test<-read.table("I:/Coursera/Data/UCI_HAR_Dataset/test/subject_test.txt", header=F)
+x_test<-read.table("./UCI_HAR_Dataset/test/X_test.txt", header=F)
+y_test<-read.table("./UCI_HAR_Dataset/test/y_test.txt", header=F)
+subject_test<-read.table("./UCI_HAR_Dataset/test/subject_test.txt", header=F)
 
 cat ("\nReading training dataset\n")
-x_train<-read.table("I:/Coursera/Data/UCI_HAR_Dataset/train/X_train.txt", header=F)
-y_train<-read.table("I:/Coursera/Data/UCI_HAR_Dataset/train/y_train.txt", header=F)
-subject_train<-read.table("I:/Coursera/Data/UCI_HAR_Dataset/train/subject_train.txt", header=F)
+x_train<-read.table("./UCI_HAR_Dataset/train/X_train.txt", header=F)
+y_train<-read.table("./UCI_HAR_Dataset/train/y_train.txt", header=F)
+subject_train<-read.table("./UCI_HAR_Dataset/train/subject_train.txt", header=F)
 
 #----------------------------------------------------------------------------
 # Cleanup header
@@ -161,7 +161,7 @@ avg_per_activity_and_subject <- dcast(narrow_data, Activity + Subject ~ variable
 # ---------------------------------------------------------------------------
 # Write the output data to file
 #
-write.table(avg_per_activity_and_subject, "I:/Coursera/Data/UCI_HAR_Dataset/avg_per_activity_and_subject.txt", row.name=FALSE);
+write.table(avg_per_activity_and_subject, "./UCI_HAR_Dataset/avg_per_activity_and_subject.txt", row.name=FALSE);
 
 
 # cleanup
